@@ -65,6 +65,22 @@ const About = () => {
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
+
+      <div className='mt-20 flex flex-col items-center gap-10'>
+        <h3 className={styles.sectionHeadText}>GitHub Stats.</h3>
+        <div className='flex flex-wrap justify-center gap-5'>
+          <img
+            src="https://github-readme-stats.vercel.app/api?username=TedXpro&show_icons=true&theme=dark&hide_border=true&bg_color=00000000"
+            alt="GitHub Stats"
+            className='h-48'
+          />
+          <img
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=TedXpro&layout=compact&theme=dark&hide_border=true&bg_color=00000000"
+            alt="Top Languages"
+            className='h-48'
+          />
+        </div>
+      </div>
     </>
   );
 };

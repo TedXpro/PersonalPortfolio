@@ -31,6 +31,9 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import travelAgency from "./projects/TravelAgency.png";
+import tourAndTravel from "./projects/TourAndTravel.png";
+
 export {
   logo,
   backend,
@@ -61,4 +64,6 @@ export {
   carrent,
   jobit,
   tripguide,
+  travelAgency,
+  tourAndTravel,
 };

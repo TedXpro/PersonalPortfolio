@@ -34,8 +34,8 @@
   --text-primary: #0f172a;
   /* Deep Navy Blue - Classy, Modern Headings */
   --card-shadow: 0px 10px 40px -10px rgba(15, 23, 42, 0.15);
-  --hero-pattern: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  /* Elegant gradient */
+  --hero-pattern: linear-gradient(135deg, #eef2f6 0%, #dde4ec 100%);
+  /* Subtle light grey gradient matching page background */
 }
 
 * {

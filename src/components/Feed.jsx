@@ -21,7 +21,7 @@ const BlogCard = ({ index, title, description, date, image, link }) => (
 
         <div className='mt-5'>
             <p className='text-secondary text-[14px]'>{date}</p>
-            <h3 className='text-white font-bold text-[24px] mt-2'>{title}</h3>
+            <h3 className='text-[var(--text-primary)] font-bold text-[24px] mt-2'>{title}</h3>
             <p className='mt-2 text-secondary text-[14px]'>{description}</p>
 
             {/* Read More button hidden for now
@@ -30,7 +30,7 @@ const BlogCard = ({ index, title, description, date, image, link }) => (
           href={link} 
           target='_blank' 
           rel='noreferrer'
-          className='text-[#915EFF] font-medium text-[16px] hover:text-white transition-colors'
+          className='text-[#915EFF] font-medium text-[16px] hover:text-[var(--text-primary)] transition-colors'
         >
           Read More &rarr;
         </a>

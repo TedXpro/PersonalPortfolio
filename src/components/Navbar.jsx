@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
+import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -41,7 +42,7 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
+          <p className='text-[var(--text-primary)] text-[18px] font-bold cursor-pointer flex '>
             Yohannes &nbsp;
             <span className='sm:block hidden'> | Computer Science Mastery</span>
           </p>
@@ -51,17 +52,20 @@ const Navbar = () => {
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className={`${active === nav.title ? "text-white" : "text-secondary"
-                } hover:text-white text-[18px] font-medium cursor-pointer`}
+              className={`${active === nav.title ? "text-[var(--text-primary)]" : "text-secondary"
+                } hover:text-[var(--text-primary)] text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
-          <li className='text-secondary hover:text-white text-[18px] font-medium cursor-pointer'>
+          <li className='text-secondary hover:text-[var(--text-primary)] text-[18px] font-medium cursor-pointer'>
             <a href='/Resume.pdf' target='_blank' rel='noopener noreferrer' className='bg-[#915EFF] py-2 px-4 rounded-xl text-white hover:bg-[#7d4cca] transition-colors'>
               Resume
             </a>
+          </li>
+          <li>
+            <ThemeToggle />
           </li>
         </ul>
 
@@ -81,7 +85,7 @@ const Navbar = () => {
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
-                  className={`font-poppins font-medium cursor-pointer text-[16px] ${active === nav.title ? "text-white" : "text-secondary"
+                  className={`font-poppins font-medium cursor-pointer text-[16px] ${active === nav.title ? "text-[var(--text-primary)]" : "text-secondary"
                     }`}
                   onClick={() => {
                     setToggle(!toggle);

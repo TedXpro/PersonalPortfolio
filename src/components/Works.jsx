@@ -48,7 +48,7 @@ const ProjectCard = ({
         </div>
 
         <div className='mt-5'>
-          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
+          <h3 className='text-[var(--text-primary)] font-bold text-[24px]'>{name}</h3>
           <p className='mt-2 text-secondary text-[14px]'>{description}</p>
         </div>
 
@@ -79,25 +79,25 @@ const ProjectModal = ({ project, onClose }) => {
         className="bg-tertiary p-8 rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto relative"
         onClick={(e) => e.stopPropagation()}
       >
-        <button onClick={onClose} className="absolute top-4 right-4 text-secondary hover:text-white text-2xl">&times;</button>
+        <button onClick={onClose} className="absolute top-4 right-4 text-secondary hover:text-[var(--text-primary)] text-2xl">&times;</button>
 
         <div className="flex flex-col md:flex-row gap-8">
           <div className="w-full md:w-1/2">
             <img src={project.image} alt={project.name} className="w-full h-auto rounded-xl object-cover" />
             <div className="mt-4 flex gap-2">
-              <a href={project.source_code_link} target="_blank" rel="noreferrer" className="bg-black-100 py-2 px-4 rounded-lg text-white text-sm hover:bg-black-200 transition-colors">
+              <a href={project.source_code_link} target="_blank" rel="noreferrer" className="bg-black-100 py-2 px-4 rounded-lg text-[var(--text-primary)] text-sm hover:bg-black-200 transition-colors">
                 View Source Code
               </a>
             </div>
           </div>
 
           <div className="w-full md:w-1/2">
-            <h2 className="text-white font-bold text-[32px]">{project.name}</h2>
+            <h2 className="text-[var(--text-primary)] font-bold text-[32px]">{project.name}</h2>
             <p className="mt-4 text-secondary text-[16px] leading-[26px]">{project.detailed_description || project.description}</p>
 
             {project.challenges && (
               <div className="mt-6">
-                <h4 className="text-white font-bold text-[20px]">Challenges</h4>
+                <h4 className="text-[var(--text-primary)] font-bold text-[20px]">Challenges</h4>
                 <ul className="list-disc list-inside mt-2 text-secondary">
                   {project.challenges.map((challenge, index) => (
                     <li key={index}>{challenge}</li>
@@ -108,7 +108,7 @@ const ProjectModal = ({ project, onClose }) => {
 
             {project.stack_details && (
               <div className="mt-6">
-                <h4 className="text-white font-bold text-[20px]">Tech Stack</h4>
+                <h4 className="text-[var(--text-primary)] font-bold text-[20px]">Tech Stack</h4>
                 <ul className="list-disc list-inside mt-2 text-secondary">
                   {project.stack_details.map((detail, index) => (
                     <li key={index}>{detail}</li>

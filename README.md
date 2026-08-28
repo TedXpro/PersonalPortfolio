@@ -1,84 +1,155 @@
-# My Portfolio - A 3D Interactive Experience
+<div align="center">
 
-This portfolio website showcases my skills and projects through an interactive 3D environment built with React and Three.js.  Explore my work, learn more about me, and get in touch!
+# 🌐 Yohannes Woldeyes — Modern Interactive Developer Portfolio
 
-## Table of Contents
+<p align="center">
+  <b>Production Full-Stack, Mobile & AI Systems Engineer Portfolio</b>
+</p>
 
-- [Introduction](#introduction)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [Contact](#contact)
-- [License](#license)
+<p align="center">
+  <a href="https://yohannes-woldeyes.vercel.app/"><img src="https://img.shields.io/badge/Live%20Demo-yohannes--woldeyes.vercel.app-8B5CF6?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo" /></a>
+  <a href="https://www.linkedin.com/in/yohannes-woldeyes/"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://github.com/TedXpro"><img src="https://img.shields.io/badge/GitHub-TedXpro-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+  <a href="mailto:johannes.woldeyes@gmail.com"><img src="https://img.shields.io/badge/Email-johannes.woldeyes%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+</p>
 
-## Introduction
+A high-performance, responsive personal portfolio built with **React 18**, **Vite**, **Tailwind CSS**, **Framer Motion**, and **Three.js / React Three Fiber**. Features dynamic dark/light theme switching, a live **GitHub Activity Heatmap**, native **OpenGraph Link Share Cards**, and an ultra-fast **Skeleton Loading Architecture**.
 
-This project is a personal portfolio website designed to be more than just a static page. It leverages the power of Three.js to create an engaging 3D experience, allowing visitors to explore my projects in a unique and interactive way.  The front-end is built with React, providing a smooth and responsive user interface.
+</div>
 
-## Features
+---
 
-* **Interactive 3D Environment:** Explore a custom-designed 3D world showcasing my projects.
-* **Project Showcases:**  Clickable elements within the 3D environment provide detailed information about each project, including descriptions, technologies used, and links to live demos or repositories.
-* **Responsive Design:**  The portfolio adapts seamlessly to different screen sizes, ensuring a consistent experience across devices.
-* **Smooth Animations:**  Engaging animations enhance the user experience and create a polished feel.
-* **Modern UI/UX:**  A clean and intuitive user interface makes navigating the portfolio effortless.
-* **Contact Form:**  An integrated contact form allows visitors to easily reach out to me.
+## ✨ Key Features & Architectural Highlights
 
-## Technologies Used
+- 🌓 **Dynamic Theme Architecture**: Fluid dark/light theme system synchronized via `ThemeContext` and Tailwind `class` strategies with CSS custom variable design tokens.
+- 📊 **Live GitHub Developer Intelligence Hub**:
+  - Direct live sync with GitHub unauthenticated APIs for real-time contribution metrics (**771+ contributions**).
+  - 53-week 1:1 pixel-accurate contribution heatmap with automatic right-scrolling to latest months and zero-jitter hover interactions.
+  - Multi-segment proportional programming language distribution progress bar.
+- 🔗 **Standard OpenGraph Link Share Previews**:
+  - Native Telegram and WhatsApp-grade rich link preview cards with 16:9 banner displays.
+  - Multi-tier graceful degradation (Live remote URL -> Local optimized asset -> Minimal typography fallback).
+- ⚡ **Skeleton Loading & Code-Splitting**:
+  - Asynchronous chunk splitting via `React.lazy` + `<Suspense>` for sub-second First Contentful Paint (FCP).
+  - Pixel-accurate responsive skeleton placeholders matching exact desktop and mobile grid geometries.
+- 🛡️ **Enterprise Resilience & Edge Performance**:
+  - Global `ErrorBoundary` preventing 3D Canvas or network exceptions from disrupting the user session.
+  - Production `vercel.json` with 1-year immutable caching for static assets and enterprise security headers (`nosniff`, `DENY`, strict referrer policy).
 
-* **React:**  A JavaScript library for building user interfaces.
-* **Three.js:**  A JavaScript 3D library used for creating and rendering 3D graphics in a web browser.
-* **GLTF Loader:** Used for loading 3D models.
-* **React Three Fiber:** A React renderer for Three.js.
-* **EmailJS:** For handling contact form submissions. *If used, ensure you have configured your EmailJS account and integrated it correctly.*
+---
 
-## Installation
+## 🛠️ Tech Stack & Dependencies
+
+| Category | Technologies |
+| :--- | :--- |
+| **Core Framework** | React 18 · Vite 6 · React Router DOM |
+| **Styling & Design** | Tailwind CSS · Glassmorphism Tokens · Lucide Icons |
+| **Animation & 3D** | Framer Motion · Three.js · React Three Fiber · Drei · Maath |
+| **API & Integrations** | Live GitHub Contributions REST API · EmailJS |
+| **Deployment & Edge** | Vercel Edge Network · Immutable Static Cache Policies |
+
+---
+
+## 📁 Repository Structure
+
+```text
+personalportfolio/
+├── public/
+│   ├── logo.svg               # Adaptive signature vector favicon
+│   └── Resume.pdf             # Engineering Resume / CV
+├── src/
+│   ├── assets/                # Optimized project banners, tech icons & company marks
+│   ├── components/
+│   │   ├── About.jsx          # Professional overview & engineering disciplines
+│   │   ├── BentoGrid.jsx      # High-density Bento Grid developer hub
+│   │   ├── Contact.jsx        # Direct contact channels & interactive EmailJS form
+│   │   ├── CountUp.jsx        # Smooth numeric ease-out counter animation
+│   │   ├── ErrorBoundary.jsx  # Resilient application error boundary
+│   │   ├── Experience.jsx     # Alternating timeline with OpenGraph link previews
+│   │   ├── Footer.jsx         # Multi-column responsive footer
+│   │   ├── GitHubStatsCard.jsx# Live 53-week GitHub contribution heatmap
+│   │   ├── Hero.jsx           # Fluid hero with 3D canvas and animated CTA
+│   │   ├── Navbar.jsx         # Glassmorphism header navigation with ThemeToggle
+│   │   ├── OpenGraphCard.jsx  # Telegram/WhatsApp standard link preview cards
+│   │   ├── Skeleton.jsx       # Universal responsive shimmer skeleton suite
+│   │   ├── Tech.jsx           # Interactive 3D tech floating balls
+│   │   ├── ThemeToggle.jsx    # Smooth liquid sun/moon theme switcher
+│   │   ├── Toast.jsx          # Lightweight floating status notification
+│   │   └── Works.jsx          # Categorized project showcase with 16:10 banners
+│   ├── context/
+│   │   └── ThemeContext.jsx   # Global dark/light theme state provider
+│   ├── constants/             # Centralized project data, timeline records, & skills
+│   ├── hoc/                   # Higher-Order Components (SectionWrapper)
+│   ├── styles/                # Tailwind layout tokens and glass variables
+│   ├── utils/                 # Motion variants and canvas math
+│   ├── App.jsx                # Root app with Suspense code-splitting & ErrorBoundary
+│   ├── index.css              # Global styles, scrollbars, and keyframe animations
+│   └── main.jsx               # React DOM root mounting
+├── index.html                 # SEO metadata, OpenGraph tags, and Twitter cards
+├── tailwind.config.cjs        # Tailwind dark mode & custom color palette
+├── vercel.json                # Edge caching rules and security headers
+└── package.json               # Project dependencies and build scripts
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- **Node.js** (v18.0.0 or later recommended)
+- **npm** or **yarn** / **pnpm**
+
+### Installation
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/TedXpro/Portfolio.git](https://www.google.com/search?q=https://github.com/TedXpro/Portfolio.git)
-2. **Navigate to the project repository**
-  ```bash
-   cd portfolio
-3. **Install dependencies**
-  ```bash
+   git clone https://github.com/TedXpro/Portfolio.git
+   cd Portfolio
+   ```
+
+2. **Install dependencies:**
+   ```bash
    npm install
-4. **Configure enviroment variables**
-  ### Inside .env file at root of the folder(DO NOT COMMIT THIS)
+   ```
 
-  REACT_APP_EMAILJS_USER_ID=your_emailjs_user_id
-  REACT_APP_EMAILJS_SERVICE_ID=your_emailjs_service_id
-  REACT_APP_EMAILJS_TEMPLATE_ID=your_emailjs_template_id
+3. **Configure Environment Variables (Optional for EmailJS):**
+   Create a `.env` file in the root directory:
+   ```env
+   VITE_APP_EMAILJS_SERVICE_ID=your_service_id
+   VITE_APP_EMAILJS_TEMPLATE_ID=your_template_id
+   VITE_APP_EMAILJS_PUBLIC_KEY=your_public_key
+   ```
 
-## Usage
+4. **Start the local development server:**
+   ```bash
+   npm run dev
+   ```
+   Open [http://localhost:5173](http://localhost:5173) in your browser.
 
+---
+
+## 📦 Build & Deployment
+
+To compile the production build:
+
+```bash
 npm run build
-npm run dev
+```
 
-## Project structure
+The optimized static assets will be output to the `dist/` directory, ready for deployment on **Vercel**, **Netlify**, or **GitHub Pages**.
 
-your-portfolio-repo/
-├── public/                # Static assets (index.html, favicon, etc.)
-│   └── index.html
-├── src/                   # Source code
-│   ├── components/        # Reusable React components
-│   │   ├── ...
-│   ├── assets/            # Images and files used
-│   │   ├── ...
-│   ├── Constants/         # All variables that are used
-│   │   ├── ...
-│   ├── App.jsx            # Main application component
-│   ├── main.jsx           # Entry point
-│   ├── styles/            # CSS or other styling files
-│   │   ├── ...
-│   ├── context/           # React Context for state management (if used)
-│   ├── utils/             # Utility functions
-│   ├── ...
-├── .env                  # Environment variables (DO NOT COMMIT)
-├── .gitignore            # Files to exclude from version control
-├── package.json          # Project dependencies and scripts
-├── README.md             # This file
-└── ...
+---
+
+## 👤 Author
+
+**Yohannes Belay Woldeyes**
+- **GitHub**: [@TedXpro](https://github.com/TedXpro)
+- **LinkedIn**: [yohannes-woldeyes](https://www.linkedin.com/in/yohannes-woldeyes/)
+- **Email**: [johannes.woldeyes@gmail.com](mailto:johannes.woldeyes@gmail.com)
+- **Portfolio**: [yohannes-woldeyes.vercel.app](https://yohannes-woldeyes.vercel.app/)
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).

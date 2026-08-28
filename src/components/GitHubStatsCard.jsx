@@ -206,8 +206,9 @@ const GitHubStatsCard = () => {
                 </span>
               </div>
               <p className="text-[11px] text-secondary font-medium mt-0.5">
-                Computer Science Graduate · AAU CNCS
+                Master's in CS & Business Tech · IE University (Madrid, Spain)
               </p>
+
             </div>
           </div>
 
@@ -424,9 +425,10 @@ const GitHubStatsCard = () => {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
           </span>
-          <span>Verified Active Developer · Addis Ababa, ET</span>
+          <span>Verified Active Developer · Madrid, Spain 🇪🇸</span>
         </div>
         <span className="text-[11px] font-mono text-secondary">2020 - 2026</span>
+
       </div>
     </div>
   );

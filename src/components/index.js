@@ -4,11 +4,21 @@ import About from "./About";
 import Tech from "./Tech";
 import Experience from "./Experience";
 import Works from "./Works";
-import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
-import Feed from "./Feed";
-
+import BentoGrid from "./BentoGrid";
+import Toast from "./Toast";
+import ThemeToggle from "./ThemeToggle";
+import Footer from "./Footer";
+import OpenGraphCard from "./OpenGraphCard";
+import GitHubStatsCard from "./GitHubStatsCard";
+import Skeleton, {
+  WorksSkeleton,
+  ExperienceSkeleton,
+  ContactSkeleton,
+  HeatmapSkeleton,
+} from "./Skeleton";
+import ErrorBoundary from "./ErrorBoundary";
 
 export {
   Hero,
@@ -17,8 +27,25 @@ export {
   Tech,
   Experience,
   Works,
-  Feedbacks,
   Contact,
   CanvasLoader,
-  Feed
+  BentoGrid,
+  Toast,
+  ThemeToggle,
+  Footer,
+  OpenGraphCard,
+  GitHubStatsCard,
+  Skeleton,
+  WorksSkeleton,
+  ExperienceSkeleton,
+  ContactSkeleton,
+  HeatmapSkeleton,
+  ErrorBoundary,
 };
+
+
+
+
+
+
+

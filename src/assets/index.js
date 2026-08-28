@@ -26,13 +26,24 @@ import shopify from "./company/shopify.png";
 import edir from "./company/edir.png";
 import ilri from "./company/ilri.png";
 import studentTeacherCommunication from "./company/studentTeacherCommunication.png";
+import tentsoftlab from "./company/tentsoftlab.png";
+import tentsoftlabSvg from "./company/tentsoftlab.svg";
+import tentsoftlabOg from "./company/tentsoftlab-og.jpg";
+import softlabTent from "./company/SOFTLAB Tent.svg";
+import softlabText from "./company/SOFTLAB.svg";
+import birrwiseLogo from "./company/birrwise-logo.png";
+import birrwiseSvg from "./company/birrwise-logo.svg";
+
 
 import carrent from "./carrent.png";
+
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 import travelAgency from "./projects/TravelAgency.png";
 import tourAndTravel from "./projects/TourAndTravel.png";
+import birrwise from "./birrwise.png";
+
 
 export {
   logo,
@@ -61,9 +72,22 @@ export {
   edir,
   ilri,
   studentTeacherCommunication,
+  tentsoftlab,
+  tentsoftlabSvg,
+  tentsoftlabOg,
+  softlabTent,
+
+  softlabText,
+  birrwiseLogo,
+  birrwiseSvg,
   carrent,
+
   jobit,
   tripguide,
   travelAgency,
   tourAndTravel,
+  birrwise,
 };
+
+
+

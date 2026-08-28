@@ -381,4 +381,12 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(139, 92, 246, 0.5);
-}
+}
+
+/* Shimmer Skeleton Keyframes */
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+

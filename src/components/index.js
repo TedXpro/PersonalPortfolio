@@ -12,6 +12,13 @@ import ThemeToggle from "./ThemeToggle";
 import Footer from "./Footer";
 import OpenGraphCard from "./OpenGraphCard";
 import GitHubStatsCard from "./GitHubStatsCard";
+import Skeleton, {
+  WorksSkeleton,
+  ExperienceSkeleton,
+  ContactSkeleton,
+  HeatmapSkeleton,
+} from "./Skeleton";
+import ErrorBoundary from "./ErrorBoundary";
 
 export {
   Hero,
@@ -28,7 +35,15 @@ export {
   Footer,
   OpenGraphCard,
   GitHubStatsCard,
+  Skeleton,
+  WorksSkeleton,
+  ExperienceSkeleton,
+  ContactSkeleton,
+  HeatmapSkeleton,
+  ErrorBoundary,
 };
+
+
 
 
 

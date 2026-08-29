@@ -63,8 +63,9 @@ const ExperienceRow = ({ experience, index }) => {
               <img
                 src={experience.logo_svgs.mark}
                 alt={`${experience.company_name} mark`}
-                className="h-10 sm:h-12 w-auto object-contain drop-shadow-sm"
+                className={`h-10 sm:h-12 w-auto object-contain drop-shadow-sm ${experience.company_name === "TentSoftLab" ? "dark:invert" : ""}`}
               />
+
               {experience.logo_svgs.text ? (
                 <img
                   src={experience.logo_svgs.text}

@@ -1,0 +1,17 @@
+{
+  "name": "Yohannes Woldeyes | Software Engineer & AI Specialist",
+  "short_name": "Yohannes Portfolio",
+  "description": "Portfolio of Yohannes Woldeyes - Full Stack Software Engineer, Mobile Developer, and AI Automation Specialist.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#060813",
+  "theme_color": "#060813",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

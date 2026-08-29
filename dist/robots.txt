@@ -1,0 +1,6 @@
+# Robots.txt for https://yohannes-woldeyes.vercel.app
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://yohannes-woldeyes.vercel.app/sitemap.xml

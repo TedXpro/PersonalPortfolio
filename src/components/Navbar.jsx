@@ -90,7 +90,7 @@ const Navbar = () => {
             <ThemeToggle />
 
             <a
-              href="/Resume.pdf"
+              href="/Yohannes_Woldeyes_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-accent-purple hover:bg-purple-600 text-white text-xs font-semibold shadow-md shadow-accent-purple/20 transition-all hover:scale-105 active:scale-95"
@@ -137,7 +137,7 @@ const Navbar = () => {
             ))}
             <li className="pt-3 border-t border-[var(--glass-border)] flex items-center gap-3">
               <a
-                href="/Resume.pdf"
+                href="/Yohannes_Woldeyes_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 text-center py-2.5 rounded-xl bg-accent-purple text-white text-xs font-semibold shadow-md"

@@ -56,7 +56,7 @@ A high-performance, responsive personal portfolio built with **React 18**, **Vit
 personalportfolio/
 ├── public/
 │   ├── logo.svg               # Adaptive signature vector favicon
-│   └── Resume.pdf             # Engineering Resume / CV
+│   └── Yohannes_Woldeyes_Resume.pdf # Engineering Resume / CV
 ├── src/
 │   ├── assets/                # Optimized project banners, tech icons & company marks
 │   ├── components/

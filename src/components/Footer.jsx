@@ -81,7 +81,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-accent-purple font-semibold transition-colors flex items-center gap-1">
+                <a href="/Yohannes_Woldeyes_Resume.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-accent-purple font-semibold transition-colors flex items-center gap-1">
                   <span>View Resume</span>
                   <ArrowUpRight className="w-3 h-3" />
                 </a>
